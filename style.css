@@ -109,3 +109,73 @@ input:focus{
     list-style: none;
 }
 
+.student-item {
+    background-color: #0f172a;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #38bdf8;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.student-info span {
+    margin-right: 15px;
+}
+
+.student-id {
+    color: #94a3b8;
+    font-size: 0.85rem;
+}
+
+.student-badge {
+    background-color: #1e293b;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #4ade80;
+    border: 1px solid #22c55e;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-action {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.btn-edit {
+    background-color: #eab308;
+    color: #1a1a2e;
+}
+
+.btn-edit:hover { background-color: #ca8a04; }
+
+.btn-delete {
+    background-color: #ef4444;
+    color: white;
+}
+
+.btn-delete:hover { background-color: #dc2626; }
+
+.btn-update {
+    background-color: #38bdf8;
+    color: #0f172a;
+    width: 100%;
+}
+.btn-update:hover { background-color: #0ea5e9; }
