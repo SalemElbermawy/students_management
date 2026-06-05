@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Mangement System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🎓 Student Management Portal</h1>
+        
+        <div class="card">
+            <h2>Add New Student</h2>
+
+            <form id="studentForm">
+                <div class="form-group">
+
+                    <label for="studentId">Student ID</label>
+                    <input type="number" id="studentId" placeholder="e.g. 101" required>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="studentName">Full Name</label>
+                    <input type="text"  id="studentName" placeholder="e.g. Salem Ahmed" required>
+                </div>
+
+                <div class="forn-group">
+
+                    <label for="studentGrade">Grade / Level</label>
+                    <input type="number"  id="studentGrade" placeholder="e.g. 3" required>
+                
+                </div>
+
+                <button type="submit" class="btn btn-success">Add Student</button>
+
+            </form>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+
+                <h2>Student Records</h2>
+
+                <button id="refreshBtn" class="btn btn-primary">🔄 Refresh List</button>
+
+            </div>
+            <ul id="studentsList" class="student-list">
+                <!-- control it by js code -->
+            </ul>
+        </div>
+
+    </div>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
