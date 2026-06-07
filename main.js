@@ -1,4 +1,4 @@
-const apiUrl = "http://127.0.0.1:8000/students";
+const apiUrl = "https://students-management-mu.vercel.app/students";
 
 async function getStudents() {
     try {
@@ -68,7 +68,7 @@ async function deleteStudent(studentId) {
     if (!confirm("Are you sure you want to delete this student?")) return;
 
     try {
-        const response = await fetch(`http://127.0.0.1:8000/student/${studentId}`, {
+        const response = await fetch(`https://students-management-mu.vercel.app/student/${studentId}`, {
             method: 'DELETE'
         });
 
