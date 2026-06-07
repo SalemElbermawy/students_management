@@ -8,6 +8,9 @@ This is a dynamic and interactive modern web application designed to manage stud
 ## THERE IS NOT DATA BASE 
 - I jsut use list or "array" in the backend file as shown in the following figure and this file is hosted on "Vercel"
 <img width="791" height="637" alt="Screenshot 2026-06-07 194031" src="https://github.com/user-attachments/assets/30762e47-2b98-4002-889d-0c51f5cfe4b4" />
+-And this is a section of the hosted
+<img width="962" height="396" alt="image" src="https://github.com/user-attachments/assets/b74cc9b2-6575-44a0-a7af-46d4803c8531" />
+
 
 
 ---
