@@ -9,22 +9,33 @@ async function getStudents() {
         list.innerHTML = ""; 
 
         if (students.length === 0) {
-            list.innerHTML = `<li style="color: #94a3b8; text-align:center;">No student records found.</li>`;
+            list.innerHTML = `<li style="color: blue; text-align:center;">No student records found.</li>`;
             return;
         }
 
         students.forEach(student => {
             list.innerHTML += `
+
                 <li class="student-item">
+
                     <div class="student-info">
+
                         <span class="student-id">#${student.id}</span>
                         <strong>${student.name}</strong>
                         <span class="student-badge">Grade: ${student.grade}</span>
+                        
                     </div>
+
                     <div class="action-buttons">
-                        <button class="btn-action btn-edit" onclick="prepareUpdate(${student.id}, '${student.name}', ${student.grade})">✏️ Edit</button>
-                        <button class="btn-action btn-delete" onclick="deleteStudent(${student.id})">🗑️ Delete</button>
-                    </div>
+
+
+                        <button class="btn-action btn-edit" onclick="prepareUpdate(${student.id}, '${student.name}', ${student.grade})"> Edit</button>
+                        <button class="btn-action btn-delete" onclick="deleteStudent(${student.id})"> Delete</button>
+                    
+                    
+                        </div>
+
+
                 </li>
             `;
         });
@@ -93,9 +104,11 @@ function prepareUpdate(id, name, grade) {
     document.getElementById('studentId').disabled = true; 
 
     const submitBtn = document.querySelector('#studentForm button[type="submit"]');
-    submitBtn.innerText = "🔄 Update Student Data";
+    submitBtn.innerText = "Update Student Data";
     submitBtn.className = "btn btn-update"; 
 }
+
+
 
 async function updateStudent() {
     const studentId = parseInt(document.getElementById('studentId').value);
@@ -105,6 +118,7 @@ async function updateStudent() {
         name: document.getElementById('studentName').value,
         grade: parseInt(document.getElementById('studentGrade').value)
     };
+
 
     try {
         const response = await fetch(`${apiUrl}/${studentId}`, {
@@ -134,6 +148,8 @@ async function updateStudent() {
     }
 }
 
+
+
 document.getElementById('studentForm').addEventListener('submit', function(e) {
     e.preventDefault();
     
@@ -144,6 +160,9 @@ document.getElementById('studentForm').addEventListener('submit', function(e) {
         createStudent(e);
     }
 });
+
+
+
 
 document.getElementById('refreshBtn').addEventListener('click', getStudents);
 
