@@ -25,6 +25,15 @@ https://salemelbermawy.github.io/students_management/
 - Click the Edit button to update a student's information
 - All changes are reflected instantly without reloading the page
 
+--- 
+
+## Installation
+
+- No installation needed for the Front-End, just open the live demo link
+- To run it locally, clone the repo and run the FastAPI back-end with
+
+
+
 ---
 # Description
 
