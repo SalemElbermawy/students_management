@@ -66,9 +66,16 @@ This is a dynamic and interactive modern web application designed to manage stud
 
 
 - you can Add students by the ID , Name , Grade
-![alt text](image.png)
-![alt text](image-1.png)
 - And you can delete student by id when you click on the delete button
-![alt text](image-2.png)
+
+---
+
+![alt text](Screenshot_20260701-102125.png)
+![alt text](Screenshot_20260701-102010.png)
+
+![alt text](Screenshot_20260701-102003.png)
+
+![alt text](Screenshot_20260701-101938.png)
+
+
 - you can also edit student info 
-![alt text](image-3.png)
